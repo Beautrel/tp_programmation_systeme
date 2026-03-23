@@ -4,15 +4,15 @@ fn calculer(a: f64, op: &str, b: f64) -> Result<f64, String> {
     match op { 
         "+" => Ok(a + b), 
         "-" => Ok(a - b), 
-        "*" => Ok(a * b), 
+        "*" => Ok(a * b),  
         "/" => { 
             if b == 0.0 { 
-                Err(String::from("Division par zéro")) 
+                Err(String::from("division par zéro")) 
             } else { 
                 Ok(a / b) 
             } 
         } 
-        _ => Err(format!("Opérateur inconnu : {}", op)), 
+        _ => Err(format!("Opérateur inconnu  : {}", op)), 
     } 
 } 
  
